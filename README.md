@@ -14,40 +14,30 @@
 **Flask Productionization:** https://towardsdatascience.com/productionize-a-machine-learning-model-with-flask-and-heroku-8201260503d2
 
 ## Understanding Data
-Tweaked the web scraper github repo (above) to scrape 1000 job postings from glassdoor.com. With each job, we got the following:
-*	Job title
-*	Salary Estimate
-*	Job Description
-*	Rating
-*	Company 
-*	Location
-*	Company Headquarters 
-*	Company Size
-*	Company Founded Date
-*	Type of Ownership 
-*	Industry
-*	Sector
-*	Revenue
-*	Competitors 
+After obtaining data from Kaggle.com. With each book, we got the following:
+*  Book ID
+*	Book title
+*  Authors
+*  Average Rating
+*  ISBN
+*  ISBN13
+*  Language Code
+*  Number of pages
+*  Rating Count
+*  Text Review Count
+*  Publication Date
+*  Publisher
 
 ## Data Cleaning
-After scraping the data, I needed to clean it up so that it was usable for our model. I made the following changes and created the following variables:
+After obtaining the data, I needed to clean it up so that it was usable for our model. I made the following changes and created the following variables:
 
-*	Parsed numeric data out of salary 
-*	Made columns for employer provided salary and hourly wages 
-*	Removed rows without salary 
-*	Parsed rating out of company text 
-*	Made a new column for company state 
-*	Added a column for if the job was at the company’s headquarters 
-*	Transformed founded date into age of company 
-*	Made columns for if different skills were listed in the job description:
-    * Python  
-    * R  
-    * Excel  
-    * AWS  
-    * Spark 
-*	Column for simplified job title and Seniority 
-*	Column for description length 
+*	Extracted books that have been written in English or English related language(more than 95% of raw-data), i.e., formed of english alphabets(a-z or A-Z), ignoring languages like Japanese, Chinese, etc. It was done in MS Excel itself, right after obtaining data.
+*  Parsed list of author to get number of authors, main authors and 2 co-authors, if any, considering main author being first one in list and rest similarly in order.
+*  Added a column for age of book from current year and publication year.
+*  Dropped rows with zero average rating
+*  Dropped rows with non-zero average rating and zero rating count(which was min)
+*  Splitted title to get actual title and removing words after keyword: "by" representing auhtor's name in title itself.
+*  Column for title length( number of words).
 
 ## EDA
 I looked at the distributions of the data and the value counts for the various categorical variables. Below are a few highlights from the pivot tables. 
