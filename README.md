@@ -1,13 +1,14 @@
-# Data Science Salary Estimator: Project Overview 
-* Created a tool that estimates data science salaries (MAE ~ $ 11K) to help data scientists negotiate their income when they get a job.
-* Scraped over 1000 job descriptions from glassdoor using python and selenium
-* Engineered features from the text of each job description to quantify the value companies put on python, excel, aws, and spark. 
+# Book Review Rating Estimator: Project Overview 
+* Created a tool that estimates book review rating (MAE ~ 0.19) to help writers understand response of readers when they write a book.
+* Obtained over 10K book review rating from Kaggle source(mentioned below), later extracted books written only in english or english derived languages(>95%-of-data).
+* Engineered features from list of authors to quantify the value readers put to main author/co-author(s) and number of authors.
+* Engineered features from title of book to quantify the value readers put to length of title. 
 * Optimized Linear, Lasso, and Random Forest Regressors using GridsearchCV to reach the best model. 
 * Built a client facing API using flask 
 
 ## Code and Resources Used 
 **Python Version:** 3.7  
-**Packages:** pandas, numpy, sklearn, matplotlib, seaborn, selenium, flask, json, pickle  
+**Packages:** pandas, numpy, sklearn, matplotlib, seaborn, flask, json, pickle  
 **For Web Framework Requirements:**  ```pip install -r requirements.txt```  
 **Scraper Github:** https://github.com/arapfaik/scraping-glassdoor-selenium  
 **Scraper Article:** https://towardsdatascience.com/selenium-tutorial-scraping-glassdoor-com-in-10-minutes-3d0915c6d905  
