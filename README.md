@@ -42,10 +42,10 @@ After obtaining the data, I needed to clean it up so that it was usable for our 
 ## EDA
 I looked at the distributions of the data and the value counts for the various categorical variables. Below are a few highlights from the pivot tables. 
 
-![alt text](https://github.com/miteshmadaan/BookReview/blob/documentation/language%20wise%20distribution%20of%20books.png)
-![alt text](https://github.com/miteshmadaan/BookReview/blob/documentation/main%20author%20wise%20distribution%20of%20books.png)
-![alt text](https://github.com/miteshmadaan/BookReview/blob/documentation/publisher%20wise%20distribution%20of%20books.png)
-![alt text](https://github.com/miteshmadaan/BookReview/blob/documentation/corr%20matrix%20image.png)
+![alt text](https://github.com/miteshmadaan/BookReview/blob/main/EDA_images/language%20wise%20distribution%20of%20books.png)
+![alt text](https://github.com/miteshmadaan/BookReview/blob/main/EDA_images/main%20author%20wise%20distribution%20of%20books.png)
+![alt text](https://github.com/miteshmadaan/BookReview/blob/main/EDA_images/publisher%20wise%20distribution%20of%20books.png)
+![alt text](https://github.com/miteshmadaan/BookReview/blob/main/EDA_images/corr%20matrix%20image.png)
 
 ## Model Building 
 
